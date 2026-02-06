@@ -7,7 +7,7 @@ export default function Contact() {
         <div className="grid lg:grid-cols-2 gap-16">
           {/* Left: Info */}
           <div>
-            <p className="text-sm font-semibold text-teal-600 uppercase tracking-widest mb-3">
+            <p className="text-sm font-semibold text-[#0c2340] uppercase tracking-widest mb-3">
               Get in Touch
             </p>
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight">
@@ -21,14 +21,14 @@ export default function Contact() {
 
             <div className="mt-10 space-y-6">
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-xl bg-teal-50 flex items-center justify-center shrink-0">
-                  <Mail size={20} className="text-teal-600" />
+                <div className="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center shrink-0">
+                  <Mail size={20} className="text-[#0c2340]" />
                 </div>
                 <div>
                   <p className="text-sm text-slate-400 font-medium">Email</p>
                   <a
                     href="mailto:info@inclusend.com"
-                    className="text-slate-900 font-medium hover:text-teal-600 transition-colors"
+                    className="text-slate-900 font-medium hover:text-[#1e3a5f] transition-colors"
                   >
                     info@inclusend.com
                   </a>
@@ -36,14 +36,14 @@ export default function Contact() {
               </div>
 
               <div className="flex items-center gap-4">
-                <div className="w-12 h-12 rounded-xl bg-teal-50 flex items-center justify-center shrink-0">
-                  <Phone size={20} className="text-teal-600" />
+                <div className="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center shrink-0">
+                  <Phone size={20} className="text-[#0c2340]" />
                 </div>
                 <div>
                   <p className="text-sm text-slate-400 font-medium">Phone</p>
                   <a
                     href="tel:+19702810510"
-                    className="text-slate-900 font-medium hover:text-teal-600 transition-colors"
+                    className="text-slate-900 font-medium hover:text-[#1e3a5f] transition-colors"
                   >
                     (970) 281-0510
                   </a>
@@ -72,7 +72,7 @@ export default function Contact() {
                     id="name"
                     name="name"
                     required
-                    className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-white text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-teal-500/30 focus:border-teal-500 transition-all"
+                    className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-white text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-[#0c2340]/20 focus:border-[#0c2340] transition-all"
                     placeholder="Jane Doe"
                   />
                 </div>
@@ -89,7 +89,7 @@ export default function Contact() {
                     id="email"
                     name="email"
                     required
-                    className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-white text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-teal-500/30 focus:border-teal-500 transition-all"
+                    className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-white text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-[#0c2340]/20 focus:border-[#0c2340] transition-all"
                     placeholder="jane@school.edu"
                   />
                 </div>
@@ -106,14 +106,14 @@ export default function Contact() {
                     name="message"
                     rows={4}
                     required
-                    className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-white text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-teal-500/30 focus:border-teal-500 transition-all resize-none"
+                    className="w-full px-4 py-3 rounded-xl border border-slate-200 bg-white text-slate-900 placeholder:text-slate-400 focus:outline-none focus:ring-2 focus:ring-[#0c2340]/20 focus:border-[#0c2340] transition-all resize-none"
                     placeholder="Tell us how we can help..."
                   />
                 </div>
 
                 <button
                   type="submit"
-                  className="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 text-base font-semibold text-white bg-teal-600 rounded-xl hover:bg-teal-700 transition-all shadow-lg shadow-teal-600/25 hover:shadow-teal-600/40"
+                  className="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 text-base font-semibold text-white bg-[#0c2340] rounded-xl hover:bg-[#1e3a5f] transition-all shadow-lg shadow-[#0c2340]/25 hover:shadow-[#0c2340]/40"
                 >
                   <Send size={18} />
                   Send Message

@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { Menu, X } from "lucide-react";
 
 const navLinks = [
@@ -19,11 +20,15 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <a href="#hero" className="flex items-center gap-2">
-            <div className="w-9 h-9 rounded-lg bg-gradient-to-br from-teal-500 to-teal-700 flex items-center justify-center">
-              <span className="text-white font-bold text-lg">I</span>
-            </div>
+            <Image
+              src="/logo.png"
+              alt="IncluSend Logo"
+              width={36}
+              height={36}
+              className="w-9 h-9 object-contain"
+            />
             <span className="text-xl font-bold text-slate-900 tracking-tight">
-              Inclu<span className="text-teal-600">Send</span>
+              Inclu<span className="text-[#0c2340]">Send</span>
             </span>
           </a>
 
@@ -33,14 +38,14 @@ export default function Navbar() {
               <a
                 key={link.label}
                 href={link.href}
-                className="text-sm font-medium text-slate-600 hover:text-teal-600 transition-colors"
+                className="text-sm font-medium text-slate-600 hover:text-[#1e3a5f] transition-colors"
               >
                 {link.label}
               </a>
             ))}
             <a
               href="#contact"
-              className="inline-flex items-center justify-center px-5 py-2 text-sm font-semibold text-white bg-teal-600 rounded-full hover:bg-teal-700 transition-colors shadow-sm"
+              className="inline-flex items-center justify-center px-5 py-2 text-sm font-semibold text-white bg-[#0c2340] rounded-full hover:bg-[#1e3a5f] transition-colors shadow-sm"
             >
               Get in Touch
             </a>
@@ -66,7 +71,7 @@ export default function Navbar() {
                 key={link.label}
                 href={link.href}
                 onClick={() => setMobileOpen(false)}
-                className="block text-base font-medium text-slate-700 hover:text-teal-600 transition-colors"
+                className="block text-base font-medium text-slate-700 hover:text-[#1e3a5f] transition-colors"
               >
                 {link.label}
               </a>
@@ -74,7 +79,7 @@ export default function Navbar() {
             <a
               href="#contact"
               onClick={() => setMobileOpen(false)}
-              className="block w-full text-center px-5 py-2.5 text-sm font-semibold text-white bg-teal-600 rounded-full hover:bg-teal-700 transition-colors mt-2"
+              className="block w-full text-center px-5 py-2.5 text-sm font-semibold text-white bg-[#0c2340] rounded-full hover:bg-[#1e3a5f] transition-colors mt-2"
             >
               Get in Touch
             </a>

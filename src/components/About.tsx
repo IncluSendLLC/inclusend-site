@@ -34,12 +34,12 @@ export default function About() {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Left: Content */}
           <div>
-            <p className="text-sm font-semibold text-teal-600 uppercase tracking-widest mb-3">
+            <p className="text-sm font-semibold text-[#0c2340] uppercase tracking-widest mb-3">
               About IncluSend
             </p>
             <h2 className="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight">
               Technology that empowers{" "}
-              <span className="text-teal-600">every</span> learner
+              <span className="text-[#0c2340]">every</span> learner
             </h2>
             <p className="mt-6 text-lg text-slate-500 leading-relaxed">
               IncluSend LLC specializes in educational technology solutions
@@ -60,8 +60,8 @@ export default function About() {
                 key={value.title}
                 className="rounded-xl bg-white p-6 border border-slate-200/80 hover:shadow-lg hover:shadow-slate-200/50 transition-all duration-300"
               >
-                <div className="w-10 h-10 rounded-lg bg-teal-50 flex items-center justify-center mb-4">
-                  <value.icon size={20} className="text-teal-600" />
+                <div className="w-10 h-10 rounded-lg bg-blue-50 flex items-center justify-center mb-4">
+                  <value.icon size={20} className="text-[#0c2340]" />
                 </div>
                 <h3 className="font-semibold text-slate-900">{value.title}</h3>
                 <p className="mt-2 text-sm text-slate-500 leading-relaxed">

@@ -13,8 +13,7 @@ const products = [
       "Data-driven insights & reporting",
     ],
     icon: Brain,
-    gradient: "from-teal-500 to-emerald-500",
-    bgGlow: "bg-teal-500/10",
+    gradient: "from-[#0c2340] to-[#1e3a5f]",
   },
   {
     name: "Gmail Accessibility Checker",
@@ -28,8 +27,7 @@ const products = [
       "One-click accessibility fixes",
     ],
     icon: MailCheck,
-    gradient: "from-blue-500 to-teal-500",
-    bgGlow: "bg-blue-500/10",
+    gradient: "from-[#1e3a5f] to-blue-500",
   },
 ];
 
@@ -39,7 +37,7 @@ export default function Products() {
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         {/* Section Header */}
         <div className="text-center max-w-2xl mx-auto mb-16">
-          <p className="text-sm font-semibold text-teal-600 uppercase tracking-widest mb-3">
+          <p className="text-sm font-semibold text-[#0c2340] uppercase tracking-widest mb-3">
             Our Products
           </p>
           <h2 className="text-3xl md:text-4xl font-bold text-slate-900 tracking-tight">
@@ -60,7 +58,7 @@ export default function Products() {
             >
               {/* Icon */}
               <div
-                className={`w-14 h-14 rounded-xl bg-gradient-to-br ${product.gradient} flex items-center justify-center mb-6 shadow-lg shadow-teal-500/20`}
+                className={`w-14 h-14 rounded-xl bg-gradient-to-br ${product.gradient} flex items-center justify-center mb-6 shadow-lg shadow-[#0c2340]/20`}
               >
                 <product.icon size={26} className="text-white" />
               </div>
@@ -68,7 +66,7 @@ export default function Products() {
               <h3 className="text-2xl font-bold text-slate-900">
                 {product.name}
               </h3>
-              <p className="text-sm font-medium text-teal-600 mt-1">
+              <p className="text-sm font-medium text-[#1e3a5f] mt-1">
                 {product.tagline}
               </p>
               <p className="mt-4 text-slate-500 leading-relaxed">
@@ -82,7 +80,7 @@ export default function Products() {
                     key={feature}
                     className="flex items-center gap-3 text-sm text-slate-600"
                   >
-                    <div className="w-1.5 h-1.5 rounded-full bg-teal-500 shrink-0" />
+                    <div className="w-1.5 h-1.5 rounded-full bg-[#0c2340] shrink-0" />
                     {feature}
                   </li>
                 ))}
@@ -92,7 +90,7 @@ export default function Products() {
               <div className="mt-8">
                 <a
                   href="#contact"
-                  className="inline-flex items-center gap-1.5 text-sm font-semibold text-teal-600 hover:text-teal-700 group/link transition-colors"
+                  className="inline-flex items-center gap-1.5 text-sm font-semibold text-[#0c2340] hover:text-[#1e3a5f] group/link transition-colors"
                 >
                   Learn more
                   <ArrowUpRight

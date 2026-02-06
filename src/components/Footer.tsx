@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 export default function Footer() {
   const year = new Date().getFullYear();
 
@@ -8,11 +10,15 @@ export default function Footer() {
           {/* Brand */}
           <div>
             <div className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-teal-500 to-teal-700 flex items-center justify-center">
-                <span className="text-white font-bold text-sm">I</span>
-              </div>
+              <Image
+                src="/logo.png"
+                alt="IncluSend Logo"
+                width={32}
+                height={32}
+                className="w-8 h-8 object-contain brightness-0 invert"
+              />
               <span className="text-lg font-bold text-white tracking-tight">
-                Inclu<span className="text-teal-400">Send</span>
+                Inclu<span className="text-blue-400">Send</span>
               </span>
             </div>
             <p className="text-sm leading-relaxed max-w-xs">
@@ -36,7 +42,7 @@ export default function Footer() {
                 <li key={link.label}>
                   <a
                     href={link.href}
-                    className="text-sm hover:text-teal-400 transition-colors"
+                    className="text-sm hover:text-blue-400 transition-colors"
                   >
                     {link.label}
                   </a>
@@ -54,7 +60,7 @@ export default function Footer() {
               <li>
                 <a
                   href="mailto:info@inclusend.com"
-                  className="hover:text-teal-400 transition-colors"
+                  className="hover:text-blue-400 transition-colors"
                 >
                   info@inclusend.com
                 </a>
@@ -62,7 +68,7 @@ export default function Footer() {
               <li>
                 <a
                   href="tel:+19702810510"
-                  className="hover:text-teal-400 transition-colors"
+                  className="hover:text-blue-400 transition-colors"
                 >
                   (970) 281-0510
                 </a>
