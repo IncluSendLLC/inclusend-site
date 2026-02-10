@@ -35,6 +35,7 @@ export default function Footer() {
             <ul className="space-y-2.5">
               {[
                 { label: "Home", href: "#hero" },
+                { label: "Can Do Navigator", href: "#can-do-navigator" },
                 { label: "Products", href: "#products" },
                 { label: "About", href: "#about" },
                 { label: "Contact", href: "#contact" },

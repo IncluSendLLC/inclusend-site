@@ -1,5 +1,6 @@
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
+import CanDoNavigator from "@/components/CanDoNavigator";
 import Products from "@/components/Products";
 import About from "@/components/About";
 import Contact from "@/components/Contact";
@@ -10,6 +11,7 @@ export default function Home() {
     <main className="min-h-screen">
       <Navbar />
       <Hero />
+      <CanDoNavigator />
       <Products />
       <About />
       <Contact />
