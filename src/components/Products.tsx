@@ -14,6 +14,8 @@ const products = [
     ],
     icon: Brain,
     gradient: "from-[#0c2340] to-[#1e3a5f]",
+    href: "#contact",
+    external: false,
   },
   {
     name: "Gmail Accessibility Checker",
@@ -28,6 +30,8 @@ const products = [
     ],
     icon: MailCheck,
     gradient: "from-[#1e3a5f] to-blue-500",
+    href: "https://chromewebstore.google.com/detail/gmail-accessibility-check/jijphdmhcgjjnpfmkleblagcpfbpelao?hl=en",
+    external: true,
   },
 ];
 
@@ -89,10 +93,11 @@ export default function Products() {
               {/* CTA */}
               <div className="mt-8">
                 <a
-                  href="#contact"
+                  href={product.href}
+                  {...(product.external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
                   className="inline-flex items-center gap-1.5 text-sm font-semibold text-[#0c2340] hover:text-[#1e3a5f] group/link transition-colors"
                 >
-                  Learn more
+                  {product.external ? "Get it now" : "Learn more"}
                   <ArrowUpRight
                     size={16}
                     className="transition-transform group-hover/link:translate-x-0.5 group-hover/link:-translate-y-0.5"
