@@ -25,7 +25,7 @@ export default function Home() {
           </h1>
           <p className="mt-6 max-w-xl text-lg leading-relaxed text-muted">
             IncluSend LLC is an independent educational technology company. We
-            build focused tools for teachers — starting with Melaa.
+            build focused tools for teachers - starting with Melaa.
           </p>
         </section>
 
@@ -60,7 +60,7 @@ export default function Home() {
           </p>
           <p className="mt-3 max-w-xl leading-relaxed text-muted">
             Melaa translates proficiency scores and WIDA Can Do Descriptors
-            into practical, grade-appropriate guidance — scaffolds, sentence
+            into practical, grade-appropriate guidance - scaffolds, sentence
             stems, and differentiation strategies grounded in each
             student&apos;s real data.
           </p>
