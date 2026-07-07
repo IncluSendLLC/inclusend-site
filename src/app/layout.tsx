@@ -1,23 +1,33 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Bricolage_Grotesque, Space_Grotesk } from "next/font/google";
 import "./globals.css";
 
-const inter = Inter({
-  variable: "--font-geist-sans",
+const bricolage = Bricolage_Grotesque({
   subsets: ["latin"],
+  weight: ["600", "700", "800"],
+  variable: "--font-bricolage",
+  display: "swap",
+});
+
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  weight: ["400", "500", "600"],
+  variable: "--font-space",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "IncluSend | Accessible EdTech Solutions",
+  metadataBase: new URL("https://www.inclusend.com"),
+  title: "IncluSend LLC",
   description:
-    "IncluSend develops educational technology solutions focused on accessibility and accommodation. AI-driven tools for inclusive education.",
+    "IncluSend LLC is an independent educational technology company and the maker of Melaa, an AI-powered tool that turns WIDA ACCESS scores into classroom-ready guidance for educators of multilingual learners.",
   keywords: [
+    "IncluSend",
+    "Melaa",
+    "educational technology",
+    "multilingual learners",
+    "WIDA",
     "accessibility",
-    "EdTech",
-    "accommodation",
-    "WCAG",
-    "AI",
-    "inclusive education",
   ],
 };
 
@@ -27,8 +37,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className="scroll-smooth">
-      <body className={`${inter.variable} antialiased`}>{children}</body>
+    <html lang="en">
+      <body
+        className={`${bricolage.variable} ${spaceGrotesk.variable} font-sans antialiased`}
+      >
+        {children}
+      </body>
     </html>
   );
 }
