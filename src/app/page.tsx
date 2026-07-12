@@ -6,8 +6,17 @@ export default function Home() {
   return (
     <div className="mx-auto flex min-h-screen max-w-3xl flex-col px-6">
       <header className="flex items-center justify-between py-10">
-        <span className="font-display text-xl font-bold tracking-tight">
-          IncluSend
+        <span className="flex items-center gap-2.5">
+          <Image
+            src="/inclusend-icon.png"
+            alt=""
+            width={36}
+            height={36}
+            priority
+          />
+          <span className="font-display text-xl font-bold tracking-tight">
+            IncluSend
+          </span>
         </span>
         <a
           href="mailto:info@inclusend.com"
@@ -67,6 +76,8 @@ export default function Home() {
 
           <a
             href="https://melaa.app"
+            target="_blank"
+            rel="noopener noreferrer"
             className="mt-8 inline-block rounded-xl bg-ink px-6 py-3.5 font-display font-bold text-paper transition-colors hover:bg-rosa"
           >
             Visit melaa.app
@@ -111,6 +122,15 @@ export default function Home() {
             className="underline-offset-4 hover:text-ink hover:underline"
           >
             (970) 281-0510
+          </a>
+          {" · "}
+          <a
+            href="https://www.linkedin.com/company/111557351"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="underline-offset-4 hover:text-ink hover:underline"
+          >
+            LinkedIn
           </a>
         </p>
       </footer>
